@@ -1,7 +1,7 @@
 function alert()
 gg.alert("Welcome to the exclusive NFP script!\n•  •  •  •  •  •  •  Version 1.0")
-HOME()
 end
+
 
 HOME=1
 function HOME()
