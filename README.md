@@ -24,9 +24,9 @@ end
 
 function MWCN()
           MWCNM = gg.multiChoice({
-  "🟩 WallHack 🟢\n  〰️ game/island 〰️ once",
-  "🟩 Red Color 🟢\n  〰️ game/island 〰️ once",
-  "🟩 Yellow Color 🟢\n  〰️ game/island 〰️ once",
+  "🟩 WallHack 🟢\n  〰️ game 〰️ once",
+  "🟩 Red Color 🟢\n  〰️ game 〰️ once",
+  "🟩 Yellow Color 🟢\n  〰️ game 〰️ once",
   "🟩 Black Sky 🟢\n  〰️ game 〰️ every",
   "🟩 No Grass 🟢\n  〰️ lobby 〰️ once",
   "🟩 No Fog 🟢\n  〰️ lobby 〰️ once",
