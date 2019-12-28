@@ -11,14 +11,12 @@ function HOME()
 HM = gg.choice({
   '⬜ Menu Wallhack/Colors/Nature ⚪️',
   '⬜ Menu Weapons/Player ⚪',
-  '⬜ Clearing Logs ⚪',
   '🔚 EXIT 🔚'
 },nil, 
    '                   ⬜  NFP Version 1.0  ⬜\n                     PUBG MOBILE: 0.16.0')
 if HM == 1 then MWCN() end
-if HM == 2 then MW() end
-if HM == 3 then CL() end
-if HM == 4 then exit() end
+if HM == 2 then MW() end 
+if HM == 3 then exit() end
 HOMEDM=-1
 end
 
@@ -109,40 +107,6 @@ if DMWM[7] == true then MW() end
 end
 end
 
-function CL()
-gg.toast("Clearing Logs ...")
-os.remove("/mnt/shell/0/emulated/Android/data/com.pubg.krmobile/cache/GCloud.ini")
-os.remove("/mnt/shell/0/emulated/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.pubg.krmobile/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.pubg.krmobile/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/mnt/shell/0/emulated/Android/data/com.tencent.tmgp.pubgmhd/cache/GCloud.ini")
-os.remove("/mnt/shell/0/emulated/Android/data/com.tencent.tmgp.pubgmhd/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.tencent.tmgp.pubgmhd/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.tencent.tmgp.pubgmhd/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.tencent.tmgp.pubgmhd/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/mnt/shell/0/emulated/Android/data/com.vng.pubgmobile/cache/GCloud.ini")
-os.remove("/mnt/shell/0/emulated/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.vng.pubgmobile/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.vng.pubgmobile/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/mnt/shell/0/emulated/Android/data/com.tencent.ig/cache/GCloud.ini")
-os.remove("/mnt/shell/0/emulated/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.tencent.ig/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/mnt/shell/0/emulated/Android/data/com.tencent.igce/cache/GCloud.ini")
-os.remove("/mnt/shell/0/emulated/Android/data/com.tencent.igce/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.tencent.igce/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.tencent.igce/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.tencent.igce/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/mnt/shell/0/emulated/Android/data/com.tencent.iglite/cache/GCloud.ini")
-os.remove("/mnt/shell/0/emulated/Android/data/com.tencent.iglite/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-os.remove("/storage/emulated/0/Android/data/com.tencent.iglite/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.tencent.iglite/cache/GCloud.ini")
-os.remove("/sdcard/Android/data/com.tencent.iglite/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs")
-gg.toast("Clearing Logs ...... ✓")
-end
 function WH()
 gg.clearResults()
 gg.setRanges(gg.REGION_VIDEO)
@@ -252,8 +216,7 @@ gg.getResults(1401)
 gg.editAll("-4767057191653227520", gg.TYPE_QWORD)
 gg.clearResults()
 gg.toast("Sit Scope deactivated ✓")
-end
-
+end 
 function HA()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -262,8 +225,7 @@ gg.getResults(100)
 gg.editAll("16000", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("Antenna activated ✓")
-end
-
+end 
 function DHA()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -272,8 +234,7 @@ gg.getResults(100)
 gg.editAll("0.98900693655", gg.TYPE_FLOAT)
 gg.clearResults()
 gg.toast("Antenna deactivated ✓")
-end
-
+end 
 function NR()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
