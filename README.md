@@ -64,7 +64,7 @@ end
 function MW()
           MWM = gg.multiChoice({
   "🟥 No Recoil 🔴\n  〰️ lobby 〰️ once",
-  "🟥 Menu Magic Bullet 🔴\n  〰️ lobby 〰️ once",
+  "🟥 Menu Magic Bullet 🔴\n  〰️ game 〰️ once",
   "🟥 Menu HeadShot 🔴\n  〰️ lobby 〰️ once",
   "🟥 AimLock 🔴\n  〰️ lobby 〰️ once",
   "🟥 Menu Antenna 🔴\n  〰️ game 〰️ every",
@@ -418,8 +418,8 @@ gg.toast("No Recoil activated ✓")
 end
 function MB()
           MBM = gg.multiChoice({
-  "🟥 Magic Bullet 50% 🔴\n  〰️ lobby 〰️ once",
-  "🟥 Magic Bullet 100% 🔴\n  〰️ lobby 〰️ once",
+  "🟥 Magic Bullet 50% 🔴\n  〰️ game 〰️ once",
+  "🟥 Magic Bullet 100% 🔴\n  〰️ game 〰️ once",
   "🔴 BACK 🔴",
 }, nil, 
    "🟥  Menu Magic Bullet  🟥   •  •  • NFP")
