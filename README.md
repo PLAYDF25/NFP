@@ -65,9 +65,9 @@ function MW()
           MWM = gg.multiChoice({
   "🟥 No Recoil 🔴\n  〰️ lobby 〰️ once",
   "🟥 Menu Magic Bullet 🔴\n  〰️ game 〰️ once",
-  "🟥 Menu HeadShot 🔴\n  〰️ lobby 〰️ once",
+  "🟥 Menu HeadShot 🔴\n  〰️ game 〰️ once",
   "🟥 AimLock 🔴\n  〰️ lobby 〰️ once",
-  "🟥 Menu Antenna 🔴\n  〰️ game 〰️ every",
+  "🟥 Antenna 🔴\n  〰️ game 〰️ every",
   "🟥 Sit Scope 🔴\n  〰️ game 〰️ every",
   "⬛ Menu Deactivate Functions ⬛",
   "⚪ BACK ⚪",
@@ -79,7 +79,7 @@ if MWM[1] == true then NR() end
 if MWM[2] == true then MB() end
 if MWM[3] == true then HS() end
 if MWM[4] == true then AL1() end
-if MWM[5] == true then ANN() end
+if MWM[5] == true then HA() end
 if MWM[6] == true then SS() end
 if MWM[7] == true then DMW() end
 if MWM[8] == true then HOME() end
@@ -92,7 +92,7 @@ function DMW()
   "⬛ Deactivate Menu Magic Bullet ⚫",
   "⬛ Deactivate Menu HeadShot ⚫",
   "⬛ Deactivate AimLock ⚫",
-  "⬛ Deactivate Menu Antenna ⚫",
+  "⬛ Deactivate Antenna ⚫",
   "⬛ Deactivate Sit Scope ⚫",
   "🔴 BACK 🔴",
 }, nil, 
@@ -103,7 +103,7 @@ if DMWM[1] == true then DNR() end
 if DMWM[2] == true then DMB() end
 if DMWM[3] == true then DHS() end
 if DMWM[4] == true then DAL1() end
-if DMWM[5] == true then DANN() end
+if DMWM[5] == true then DHA() end
 if DMWM[6] == true then DSS() end
 if DMWM[7] == true then MW() end
 end
@@ -253,46 +253,7 @@ gg.editAll("-4767057191653227520", gg.TYPE_QWORD)
 gg.clearResults()
 gg.toast("Sit Scope deactivated ✓")
 end
-function ANN()
-          AM = gg.multiChoice({
-  "🟥 Head Antenna 🔴\n  〰️ game 〰️ every",
-  "🟥 Flare Gun Antenna 🔴\n  〰️ game 〰️ every",
-  "🟥 3 lvl Item Antenna 🔴\n  〰️ game 〰️ every",
-  "🟥 M4 Antenna 🔴\n  〰️ game 〰️ every",
-  "🟥 SCAR-L Antenna 🔴\n  〰️ game 〰️ every",
-  "🔴 BACK 🔴",
-}, nil, 
-   "🟥  Menu Antenna  🟥   •  •  • NFP")
-if AM == nil then
-else
-if AM[1] == true then HA() end
-if AM[2] == true then FGA() end
-if AM[3] == true then LIA() end
-if AM[4] == true then M4A() end
-if AM[5] == true then SLA() end
-if AM[6] == true then MW() end
-end
-end
-function DANN()
-          DAM = gg.multiChoice({
-  "⬛ Deactivate Head Antenna ⚫",
-  "⬛ Deactivate Flare Gun Antenna ⚫",
-  "⬛ Deactivate 3 lvl Item Antenna ⚫",
-  "⬛ Deactivate M4 Antenna ⚫",
-  "⬛ Deactivate SCAR-L Antenna ⚫",
-  "⚫ BACK ⚫",
-}, nil, 
-   "⬛  Menu Deactivate Antenna  ⬛   •  •  • NFP")
-if DAM == nil then
-else
-if DAM[1] == true then DHA() end
-if DAM[2] == true then DFGA() end
-if DAM[3] == true then DLIA() end
-if DAM[4] == true then DM4A() end
-if DAM[5] == true then DSLA() end
-if DAM[6] == true then DMW() end
-end
-end
+
 function HA()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -300,53 +261,9 @@ gg.searchNumber("0.98900693655~0.98900723457", gg.TYPE_FLOAT, false, gg.SIGN_EQU
 gg.getResults(100)
 gg.editAll("16000", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("Head Antenna activated ✓")
+gg.toast("Antenna activated ✓")
 end
-function FGA()
-gg.clearResults()
-gg.setRanges(gg.REGION_VIDEO)
-gg.searchNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("0.7576~0.7579", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("99599", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("Flare Gun Antenna activated ✓")
-end
-function LIA()
-gg.clearResults()
-gg.setRanges(gg.REGION_VIDEO)
-gg.searchNumber("7.1689529418945", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(5)
-gg.editAll("98989", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("7.4993133544922", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(5)
-gg.editAll("97979", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("18.46202087402", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(5)
-gg.editAll("96969", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("3 lvl Item Antenna activated ✓")
-end
-function M4A()
-gg.clearResults()
-gg.setRanges(gg.REGION_VIDEO)
-gg.searchNumber("0.7593~0.7594", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("99989", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("M4 Antenna activated ✓")
-end
-function SLA()
-gg.clearResults()
-gg.setRanges(gg.REGION_VIDEO)
-gg.searchNumber("0.7636~0.7636", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("99979", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("SCAR-L Antenna activated ✓")
-end
+
 function DHA()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
@@ -354,52 +271,7 @@ gg.searchNumber("16000", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
 gg.editAll("0.98900693655", gg.TYPE_FLOAT)
 gg.clearResults()
-gg.toast("Head Antenna deactivated ✓")
-end
-function DFGA()
-gg.clearResults()
-gg.setRanges(gg.REGION_VIDEO)
-gg.searchNumber("99599", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.refineNumber("99599", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("0.7576", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("Flare Gun Antenna deactivated ✓")
-end
-function DLIA()
-gg.clearResults()
-gg.setRanges(gg.REGION_VIDEO)
-gg.searchNumber("98989", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(5)
-gg.editAll("7.1689529418945", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("97979", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(5)
-gg.editAll("7.4993133544922", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.searchNumber("96969", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(5)
-gg.editAll("18.46202087402", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("3 lvl Item Antenna deactivated ✓")
-end
-function DM4A()
-gg.clearResults()
-gg.setRanges(gg.REGION_VIDEO)
-gg.searchNumber("99989", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(10)
-gg.editAll("0.7593", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("M4 Antenna deactivated ✓")
-end
-function DSLA()
-gg.clearResults()
-gg.setRanges(gg.REGION_VIDEO)
-gg.searchNumber("99979", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("0.7636", gg.TYPE_FLOAT)
-gg.clearResults()
-gg.toast("SCAR-L Antenna deactivated ✓")
+gg.toast("Antenna deactivated ✓")
 end
 
 function NR()
@@ -432,8 +304,8 @@ end
 end
 function HS()
           HSM = gg.multiChoice({
-  "🟥 HeadShot 50% 🔴\n  〰️ lobby 〰️ once",
-  "🟥 HeadShot 100% 🔴\n  〰️ lobby 〰️ once",
+  "🟥 HeadShot 50% 🔴\n  〰️ game 〰️ once",
+  "🟥 HeadShot 100% 🔴\n  〰️ game 〰️ once",
   "🔴 BACK 🔴",
 }, nil, 
    "🟥  Menu HeadShot  🟥   •  •  • NFP")
