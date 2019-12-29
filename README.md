@@ -63,7 +63,7 @@ function MW()
           MWM = gg.multiChoice({
   "🟥 No Recoil 🔴\n  〰️ lobby 〰️ once",
   "🟥 Menu Magic Bullet 🔴\n  〰️ game 〰️ once",
-  "🟥 Menu HeadShot 🔴\n  〰️ game 〰️ once",
+  "🟥 Menu HeadShot 🔴\n  〰️ lobby 〰️ once",
   "🟥 AimLock 🔴\n  〰️ lobby 〰️ once",
   "🟥 Antenna 🔴\n  〰️ game 〰️ every",
   "🟥 Sit Scope 🔴\n  〰️ game 〰️ every",
