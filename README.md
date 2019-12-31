@@ -75,7 +75,7 @@ if MWM == nil then
 else
 if MWM[1] == true then NR() end
 if MWM[2] == true then MB() end
-if MWM[3] == true then HS() end
+if MWM[3] == true then hsmenupro() end
 if MWM[4] == true then AL1() end
 if MWM[5] == true then HA() end
 if MWM[6] == true then SS() end
@@ -84,29 +84,109 @@ if MWM[8] == true then HOME() end
 end
 end
 
+
 function DMW()
           DMWM = gg.multiChoice({
-  "⬛ Deactivate No Recoil ⚫",
-  "⬛ Deactivate Menu Magic Bullet ⚫",
-  "⬛ Deactivate Menu HeadShot ⚫",
+  "⬛ Deactivate Menu Magic Bullet",
   "⬛ Deactivate AimLock ⚫",
   "⬛ Deactivate Antenna ⚫",
   "⬛ Deactivate Sit Scope ⚫",
   "🔴 BACK 🔴",
-}, nil, 
+}, nil, "
    "⬛  Menu Deactivate Functions  ⬛   •  •  • NFP")
 if DMWM == nil then
 else
-if DMWM[1] == true then DNR() end
-if DMWM[2] == true then DMB() end
-if DMWM[3] == true then DHS() end
-if DMWM[4] == true then DAL1() end
-if DMWM[5] == true then DHA() end
-if DMWM[6] == true then DSS() end
-if DMWM[7] == true then MW() end
+if DMWM[1] == true then DMB() end
+if DMWM[2] == true then DAL1() end
+if DMWM[3] == true then DHA() end
+if DMWM[4] == true then DSS() end
+if DMWM[5] == true then MW() end
 end
 end
 
+function hsmenupro()
+AJ = gg.choice({
+   "🟥 HeadShot 50% 🔴",
+   "🟥 HeadShot 60% 🔴",
+   "🟥 HeadShot 70% 🔴",
+   "🟥 HeadShot 80% 🔴",
+   "🟥 HeadShot 90% 🔴",
+   "🟥 HeadShot 100% 🔴"",
+   "🔴 BACK 🔴"
+},nil,"🟥 Menu HeadShot 🟥")
+if AJ == 1 then hs50() end
+if AJ == 2 then hs60() end
+if AJ == 3 then hs70() end
+if AJ == 4 then hs80() end
+if AJ == 5 then hs90() end
+if AJ == 6 then hs100() end
+if AJ == 7 then MW() end
+end
+
+function hs100()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("450", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("HeadShot 100% activated")
+end
+
+function hs90()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("400", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("HeadShot 90% activated")
+end
+
+function hs80()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("350", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("HeadShot 80% activated")
+end
+
+function hs70()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("300", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("HeadShot 70% activated")
+end
+
+function hs60()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("250", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("HeadShot 60% activated")
+end 
+function hs50()
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("9.20161819458;23;25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("25;30.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100)
+gg.editAll("200", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("HeadShot 50% activated")
+end
 function WH()
 gg.clearResults()
 gg.setRanges(gg.REGION_VIDEO)
