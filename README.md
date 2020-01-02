@@ -62,7 +62,7 @@ end
 function MW()
           MWM = gg.multiChoice({
   "🟥 No Recoil 🔴\n  〰️ island 〰️ once",
-  "🟥 Less Recoil 🔴\n  〰️ island 〰️ once",
+  "🟥 Less Recoil 🔴\n  〰️ lobby 〰️ once",
   "🟥 Menu Magic Bullet 🔴\n  〰️ game 〰️ once",
   "🟥 Menu HeadShot 🔴\n  〰️ game 〰️ once",
   "🟥 AimLock 🔴\n  〰️ lobby 〰️ once",
@@ -130,17 +130,14 @@ end
 
 function NRLL()
 gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("1.5584387e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1.5584387e28", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("0", gg.TYPE_FLOAT)
+gg.setRanges(gg.REGION_C_DATA)
+gg.searchNumber("-1903895931231645695", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1903895931231645695", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.refineAddress("2A0", -1, gg.TYPE_QWORD, gg.SIGN_EQUAL, 0, -1)
+gg.refineNumber("-1903895931231645695", gg.TYPE_QWORD, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(1401)
+gg.editAll("-1903895931231645696", gg.TYPE_QWORD)
 gg.clearResults()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("-1,082,130,432;1,084,227,584;132,608;1,065,353,216;1;0.05000000075F;8.0F;0.10000000149F;0.55000001192F::", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.searchNumber("1", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
-gg.getResults(100)
-gg.editAll("0", gg.TYPE_DWORD)
 end
 function hs100()
 gg.clearResults()
