@@ -16,7 +16,6 @@ gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SGN_EQUAL, 0, -1)
 resultsCount = gg.getResultCount()
 results = gg.getResults(resultsCount)
 for x = 1, resultsCount do
-
 gg.addListItems({
 [1] = {
 address = results[x].address + 0,
@@ -25,7 +24,6 @@ freeze = true,
 value = 70037
 }
 })
-
 gg.addListItems({
 [1] = {
 address = results[x].address + 4,
@@ -34,7 +32,6 @@ freeze = true,
 value = 70037
 }
 })
-
 gg.addListItems({
 [1] = {
 address = results[x].address + 8,
@@ -43,7 +40,6 @@ freeze = true,
 value = 70037
 }
 })
-
 gg.addListItems({
 [1] = {
 address = results[x].address + 12,
@@ -52,7 +48,6 @@ freeze = true,
 value = 70037
 }
 })
-
 gg.addListItems({
 [1] = {
 address = results[x].address + 16,
@@ -61,7 +56,6 @@ freeze = true,
 value = 70037
 }
 })
-
 gg.addListItems({
 [1] = {
 address = results[x].address + 20,
@@ -70,7 +64,6 @@ freeze = true,
 value = 70032
 }
 })
-
 gg.addListItems({
 [1] = {
 address = results[x].address + 100,
@@ -79,6 +72,7 @@ freeze = true,
 value = 16384
 }
 })
+end
 gg.clearResults()
 end
 
