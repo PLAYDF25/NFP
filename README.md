@@ -5,18 +5,96 @@ BP = gg.alert('Welcome to the exclusive NFP script!\n  •  •  •  •  •  
 if BP == 1 then HOME() end
 end
 
+function anticheat()
+gg.clearResults()
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SGN_EQUAL, 0, -1)
+if gg.getResultCount() == 0 then
+gg.alert("Failed")
+else
+gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SGN_EQUAL, 0, -1)
+resultsCount = gg.getResultCount()
+results = gg.getResults(resultsCount)
+for x = 1, resultsCount do
+
+gg.addListItems({
+[1] = {
+address = results[x].address + 0,
+flags = 4,
+freeze = true,
+value = 70037
+}
+})
+
+gg.addListItems({
+[1] = {
+address = results[x].address + 4,
+flags = 4,
+freeze = true,
+value = 70037
+}
+})
+
+gg.addListItems({
+[1] = {
+address = results[x].address + 8,
+flags = 4,
+freeze = true,
+value = 70037
+}
+})
+
+gg.addListItems({
+[1] = {
+address = results[x].address + 12,
+flags = 4,
+freeze = true,
+value = 70037
+}
+})
+
+gg.addListItems({
+[1] = {
+address = results[x].address + 16,
+flags = 4,
+freeze = true,
+value = 70037
+}
+})
+
+gg.addListItems({
+[1] = {
+address = results[x].address + 20,
+flags = 4,
+freeze = true,
+value = 70032
+}
+})
+
+gg.addListItems({
+[1] = {
+address = results[x].address + 100,
+flags = 4,
+freeze = true,
+value = 16384
+}
+})
+gg.clearResults()
+end
 
 HOME=1
 function HOME()
 HM = gg.choice({
   '⬜ Menu Wallhack/Colors/Nature ⚪️',
   '⬜ Menu Weapons/Player ⚪',
+  '✓ AntiCheat ✓',
   '🔚 EXIT 🔚'
 },nil, 
    '                   ⬜  NFP Version 1.0  ⬜\n                     PUBG MOBILE: 0.16.0')
 if HM == 1 then MWCN() end
-if HM == 2 then MW() end 
-if HM == 3 then exit() end
+if HM == 2 then MW() end
+if HM == 3 then anticheat() end
+if HM == 4 then exit() end
 HOMEDM=-1
 end
 
